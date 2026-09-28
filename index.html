@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Thanh Xuân Vườn Trường — Graduation 2026 | Lê Mai Anh | Premium Digital Graduation Card" />
+  <title>Lê Mai Anh | Graduation 2026 | Digital Invitation</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="loading-screen" aria-live="polite">
+    <div class="loader-ring" aria-hidden="true"></div>
+    <span>Loading your invitation…</span>
+  </div>
+
+  <!-- ENVELOPE STAGE -->
+  <section id="envelope-stage" class="stage stage-active">
+    <div class="envelope-container">
+      <div class="envelope">
+        <div class="envelope-flap"></div>
+        <div class="envelope-body">
+          <div class="envelope-front">
+            <p class="envelope-text">YOU'RE INVITED</p>
+            <p class="envelope-subtext">to celebrate</p>
+            <p class="envelope-name">LÊ MAI ANH</p>
+            <p class="envelope-date">Graduation 2026</p>
+          </div>
+        </div>
+      </div>
+      <button class="open-envelope-btn" type="button" aria-label="Open invitation">
+        <span>OPEN INVITATION</span>
+        <span class="sparkle" aria-hidden="true">✨</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- PHOTO REVEAL STAGE -->
+  <section id="photo-stage" class="stage">
+    <div class="photo-reveal-container">
+      <div class="photo-frame-premium">
+        <img 
+          src="./assets/graduation-photo.png" 
+          alt="Lê Mai Anh graduation portrait" 
+          class="graduation-photo"
+          onerror="this.style.display='none'; this.parentElement.classList.add('missing-photo');"
+        />
+        <div class="photo-frame-border"></div>
+        <div class="photo-shine" aria-hidden="true"></div>
+      </div>
+      <button class="nav-btn next-btn" type="button" aria-label="Next">
+        <span>→</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- CARD CONTENT STAGE -->
+  <section id="card-stage" class="stage">
+    <div class="card-content-container">
+      <div class="card-page left-page">
+        <div class="page-content">
+          <p class="card-eyebrow">Together we celebrate</p>
+          <h1 class="card-title">LÊ MAI ANH</h1>
+          <p class="card-subtitle typewriter-text" data-text="Bachelor of Valuation & Asset Management">
+            Bachelor of Valuation & Asset Management
+          </p>
+        </div>
+      </div>
+
+      <div class="card-page right-page">
+        <div class="page-content">
+          <p class="card-greeting">Dear Friends & Family,</p>
+          <p class="card-body-text typewriter-message">
+            Please join us in celebrating the graduation of
+          </p>
+          <p class="card-body-highlight">Lê Mai Anh</p>
+          <p class="card-body-text typewriter-message-two">
+            from the University of Economics Ho Chi Minh City
+          </p>
+          <div class="card-details">
+            <p><strong>Class of</strong> 2026</p>
+            <p><strong>University</strong> UEH</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="nav-btn next-btn" type="button" aria-label="Next page">
+        <span>→</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- MAP & DETAILS STAGE -->
+  <section id="map-stage" class="stage">
+    <div class="map-container">
+      <div class="map-header">
+        <h2>Join Us in Celebrating</h2>
+        <p>University of Economics Ho Chi Minh City</p>
+      </div>
+
+      <div class="map-wrapper">
+        <div id="map" class="interactive-map" role="region" aria-label="Location map"></div>
+        <div class="map-info-card">
+          <div class="info-item">
+            <span class="info-label">📍 Location</span>
+            <p>University of Economics Ho Chi Minh City</p>
+          </div>
+          <div class="info-item">
+            <span class="info-label">📅 Class of</span>
+            <p>2026</p>
+          </div>
+          <div class="info-item">
+            <span class="info-label">🎓 Degree</span>
+            <p>Bachelor of Valuation & Asset Management</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="nav-btn next-btn" type="button" aria-label="Next">
+        <span>→</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- FINAL CELEBRATION STAGE -->
+  <section id="celebration-stage" class="stage">
+    <div class="celebration-container">
+      <div class="confetti-burst" aria-hidden="true"></div>
+      
+      <div class="celebration-content">
+        <div class="celebration-badge">🎓</div>
+        <h1 class="celebration-title">Congratulations!</h1>
+        <p class="celebration-message">
+          Mai Anh can't wait to celebrate this special day with you!
+        </p>
+        <p class="celebration-heart">💙</p>
+        
+        <div class="celebration-details">
+          <p class="detail-line">Thank you for being part of this beautiful journey</p>
+          <p class="detail-line">of growth, friendship, and unforgettable memories.</p>
+        </div>
+
+        <div class="action-buttons">
+          <button class="btn-primary" type="button">
+            <a href="https://www.ueh.edu.vn" target="_blank" rel="noopener">Visit UEH</a>
+          </button>
+          <button class="btn-secondary" type="button" id="replay-all">
+            Replay Experience
+          </button>
+        </div>
+      </div>
+
+      <div class="stage-counter">
+        <span id="stage-indicator">Invitation Complete</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- MUSIC TOGGLE -->
+  <button class="music-toggle" type="button" aria-label="Toggle background music" aria-pressed="false">
+    ♪ MUSIC OFF
+  </button>
+
+  <!-- STAGE PROGRESS -->
+  <div class="stage-navigation">
+    <button class="stage-dot" data-stage="0" aria-label="Envelope" title="Envelope"></button>
+    <button class="stage-dot" data-stage="1" aria-label="Photo" title="Photo"></button>
+    <button class="stage-dot" data-stage="2" aria-label="Card" title="Card"></button>
+    <button class="stage-dot" data-stage="3" aria-label="Details" title="Details"></button>
+    <button class="stage-dot" data-stage="4" aria-label="Celebration" title="Celebration"></button>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
